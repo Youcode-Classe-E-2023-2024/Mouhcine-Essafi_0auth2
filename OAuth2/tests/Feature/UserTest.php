@@ -19,10 +19,10 @@ class UserTest extends TestCase
             'name' => 'Test User',
             'email' => 'mouhcine4@gmail.com',
             'password' => 'password',
-            'role' => 6,
+            'role' => 2,
         ];
 
-        $response = $this->json('POST', '/api/auth/signup', $userData);
+        $response = $this->json('POST', '/api/auth/register', $userData);
 
         $response->assertStatus(201)
             ->assertJson([

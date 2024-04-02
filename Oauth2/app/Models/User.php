@@ -45,7 +45,7 @@ class User extends Authenticatable
 
     public function isAdmin()
     {
-        return $this->role === 4;
+        return $this->role === 1;
     }
 
 }

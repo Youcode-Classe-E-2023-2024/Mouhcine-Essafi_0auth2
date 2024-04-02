@@ -11,13 +11,13 @@ class AdminSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    public function run(): void
+    public function run()
     {
         User::create([
             'name' => 'Admin',
-            'email' => 'admin@example.com',
-            'password' => bcrypt('password123'),
-            'role' => '3',
+            'email' => 'admin@gmail.com',
+            'password' => bcrypt('admin@gmail.com'),
+            'role' => '1',
         ]);
     }
 }
